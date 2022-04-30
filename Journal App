@@ -1,0 +1,20 @@
+CREATE TABLE journal (id INTEGER PRIMARY KEY, name TEXT, date INTEGER, details TEXT);
+
+INSERT INTO journal VALUES (1, "Deborah Smith", "4-15-22", "I had the best day and went skydiving");
+INSERT INTO journal VALUES (2, "Bob Johnson", "4-16-22", "Today, I went to the park and played with my grandson");
+INSERT INTO journal VALUES (3, "Axel Delgado", "4-17-22", "I baked cookies with my mom today");
+INSERT INTO journal VALUES (4, "Harry Potter", "4-18-22", "I caught the golden snitch and won the Cup");
+INSERT INTO journal VALUES (5, "Hagrid", "4-18-22", "I let Buckbeak jump on Draco and it was the best day of my life. Good riddence"); 
+INSERT INTO journal VALUES (6, "Cho Chang", "4-19-22", "I snogged Harry today and it was dreamy");
+
+SELECT * FROM journal;
+
+UPDATE journal SET details = "I hate Harry so much and I'm going to tell Umbridge about the DA" WHERE id = 6;
+
+SELECT * FROM journal;
+
+DELETE FROM journal WHERE id = 3;
+SELECT * FROM journal;
+
+
+
